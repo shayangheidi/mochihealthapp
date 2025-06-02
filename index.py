@@ -17,17 +17,16 @@ scope = [
     "https://www.googleapis.com/auth/drive",
 ]
 creds = ServiceAccountCredentials.from_json_keyfile_name(
-    "mochihealth-1c04f451a466.json", scope
+    "mochihealth-7c7093c106d2.json", scope
 )
 client = gspread.authorize(creds)
 
-# Open the sheet by ID
 sheet = client.open_by_key(
     "1FyYJj9wjjvLefmILiOH3NhcAdxIU7Dpx5zsJeli2Wec"
-).sheet1  # use .sheet1 or get_worksheet(0)
+).sheet1  
+
 import dash_mantine_components as dmc
 from dash_iconify import DashIconify
-from dash.exceptions import PreventUpdate
 import yaml
 from app import app, server  # noqa: F401
 
