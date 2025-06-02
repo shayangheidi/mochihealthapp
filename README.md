@@ -8,7 +8,13 @@ This app was made to record the moods of users as well as optional comments. The
 
 ## How it was created
 
-The app was written in Python using the dash/plotly packages mostly and deployed to Google Cloud Run via Docker. Data is recorded via Google Sheets.
+The app was written in Python using the Dash/Plotly packages (using Dash Mantine components) mostly and deployed to Google Cloud Run via Docker. Data is recorded via Google Sheets.
+
+## How to debug
+
+To run locally, run the following command in your terminal
+
+`python .\index.py`
 
 ## Link to the app
 
