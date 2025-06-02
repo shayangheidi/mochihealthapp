@@ -10,15 +10,15 @@ from datetime import datetime, timedelta
 import pandas as pd
 import plotly.express as px
 import gspread
-from oauth2client.service_account import ServiceAccountCredentials
+from google.auth import default
 
 scope = [
     "https://spreadsheets.google.com/feeds",
     "https://www.googleapis.com/auth/drive",
 ]
-creds = ServiceAccountCredentials.from_json_keyfile_name(
-    "mochihealth-7c7093c106d2.json", scope
-)
+
+creds, _ = default()
+gc = gspread.authorize(creds)
 client = gspread.authorize(creds)
 
 sheet = client.open_by_key(
