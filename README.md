@@ -10,3 +10,7 @@ This app was made to record the moods of users as well as optional comments. The
 
 The app was written in Python using the dash/plotly packages mostly and deployed to Google Cloud Run via Docker. Data is recorded via Google Sheets.
 
+## Link to the app
+
+https://sgmhassessment-512510100551.europe-west1.run.app/
+
