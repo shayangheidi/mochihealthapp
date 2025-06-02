@@ -11,6 +11,10 @@ import pandas as pd
 import plotly.express as px
 import gspread
 from google.auth import default
+import dash_mantine_components as dmc
+from dash_iconify import DashIconify
+import yaml
+from app import app, server  # noqa: F401
 
 scope = [
     "https://spreadsheets.google.com/feeds",
@@ -21,14 +25,7 @@ creds, _ = default()
 gc = gspread.authorize(creds)
 client = gspread.authorize(creds)
 
-sheet = client.open_by_key(
-    "1FyYJj9wjjvLefmILiOH3NhcAdxIU7Dpx5zsJeli2Wec"
-).sheet1  
-
-import dash_mantine_components as dmc
-from dash_iconify import DashIconify
-import yaml
-from app import app, server  # noqa: F401
+sheet = client.open_by_key("1FyYJj9wjjvLefmILiOH3NhcAdxIU7Dpx5zsJeli2Wec").sheet1
 
 
 with open("config.yml") as f:
