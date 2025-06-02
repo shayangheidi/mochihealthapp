@@ -125,7 +125,7 @@ app.layout = dmc.MantineProvider(
                         id="alert",
                         hide=True,
                         withCloseButton=True,
-                        style={"margin-inline": "auto"},
+                        style={"margin-inline": "auto", "width": "300px"},
                         radius="md",
                         className="alert",
                     ),
