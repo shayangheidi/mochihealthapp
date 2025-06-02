@@ -1,0 +1,10 @@
+---
+tooltips:
+  actionicon-darkmode: Toggle dark/light mode
+
+    
+display:
+  accent_color_dark: cyan
+  accent_colorcode_dark: "#ADD8E6"
+  accent_color_light: cyan
+  accent_colorcode_light:  "#ADD8E6" 
