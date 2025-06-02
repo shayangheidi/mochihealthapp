@@ -67,16 +67,9 @@ app.layout = dmc.MantineProvider(
                 ],
                 className="header",
             ),
-            html.I(
-                "Log your mood",
-                style={
-                    "margin-bottom": "15px",
-                    "margin-left": "10px",
-                    "margin-inline": "auto",
-                    "padding-right": "17px",
-                    "padding-left": "17px",
-                    "border-radius": "4px",
-                },
+            html.P(
+                "Created By Shayan Gheidi",
+                style={"width": "fit-content", "margin-inline": "auto"},
             ),
             html.Div(
                 [
@@ -113,7 +106,7 @@ app.layout = dmc.MantineProvider(
                     dmc.Textarea(
                         id="mood-comment",
                         label="Add a comment (optional)",
-                        placeholder="What’s on your mind?",
+                        placeholder="Tell us more about your experience today",
                         autosize=True,
                         minRows=1,
                         maxRows=3,

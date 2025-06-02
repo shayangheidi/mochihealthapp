@@ -8,7 +8,7 @@ app = Dash(
         {"name": "viewport", "content": "width=device-width, initial-scale=1.0"},
         {
             "name": "title",
-            "content": """1-800 Slowed & Reverb""",
+            "content": """Mochi Health Assessment""",
         },
     ],
     update_title=None,
