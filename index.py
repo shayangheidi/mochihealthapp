@@ -61,11 +61,9 @@ app.layout = dmc.MantineProvider(
     withNormalizeCSS=True,
     children=html.Div(
         [
-            html.Div(
-                [
-                    html.H1(children="Mochi Health"),
-                ],
-                className="header",
+            html.H1(
+                children="Mochi Health",
+                style={"width": "fit-content", "margin-inline": "auto"},
             ),
             html.P(
                 "Created By Shayan Gheidi",
@@ -93,6 +91,7 @@ app.layout = dmc.MantineProvider(
                     ),
                 ],
                 className="top-buttons",
+                style={"width": "fit-content", "margin-inline": "auto"},
             ),
             html.Div(
                 [
